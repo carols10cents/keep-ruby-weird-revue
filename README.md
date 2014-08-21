@@ -7,28 +7,38 @@ Jeremy todo
 ===========
 
 * Experiment with projector, camera, slides, puppet stand-in
-* 
+* Prototypes
 
 Carol todo
 ==========
 
+* Look up talks
+* Representative characteristics - pictures, lists
 
 
 Talks by year
 =============
+
 * _why the Lucky Stiff 
 * Sandi Metz
 * Matz
 * DHH - intro rails ?
-* Tenderlove 
+* Tenderlove (+ gorby and seatac)
 
 
 * 2013 - Jim Weirich at SCRC
 * 2014 - Meta, US
 
 
-Supplies
-========
+Supplies to request from organizers
+===================================
 
 * Table
 * 
+
+
+After - wat do with puppets?
+============================
+
+* Give Tenderlove's to him
+* Auction for charity?
