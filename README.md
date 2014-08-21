@@ -24,6 +24,7 @@ Talks by year
 * Matz
 * DHH - intro rails ?
 * Tenderlove (+ gorby and seatac)
+* Corey Haines
 
 
 * 2013 - Jim Weirich at SCRC
