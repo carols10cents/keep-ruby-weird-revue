@@ -20,6 +20,7 @@ Talks by year
 =============
 
 * _why the Lucky Stiff 
+  * ART && CODE symposium 2009 - http://vimeo.com/5047563
 * Sandi Metz
 * Matz
 * DHH - intro rails ?
