@@ -64,6 +64,6 @@ a dramatic revue
 
 ---
 
-\* the first rubyconf was 2002. we're sorry, we did the math with javascript.
+\* the first rubyconf was 2001. we're sorry, we did the math with javascript.
 
 
