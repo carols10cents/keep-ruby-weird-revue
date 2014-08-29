@@ -53,6 +53,7 @@ Talks by year
 
 * 2006 - DHH at the 1st RailsConf 2006 
   * in pieces at http://www.scribemedia.org/2006/07/09/dhh/
+  * slides: http://www.slideshare.net/vishnu/discovering-a-world-of-resources-on-rails
   * White RailsConf t-shirt, gray hoodie, blonde hair with the little flip in the front
 
 * 2013 - Jim Weirich at SCRC
