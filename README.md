@@ -51,6 +51,10 @@ Talks by year
 * Glenn Vanderburg
 
 
+* 2006 - DHH at the 1st RailsConf 2006 
+  * in pieces at http://www.scribemedia.org/2006/07/09/dhh/
+  * White RailsConf t-shirt, gray hoodie, blonde hair with the little flip in the front
+
 * 2013 - Jim Weirich at SCRC
 * 2014 - Meta, US
 
