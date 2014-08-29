@@ -48,3 +48,19 @@ After - wat do with puppets?
 
 * Give Tenderlove's to him
 * Auction for charity?
+
+
+
+Slide ideas
+===========
+
+TEN* YEARS OF RUBY CONFERENCES
+
+(fade in)
+a dramatic revue
+
+---
+
+\* the first rubyconf was 2002. we're sorry, we did the math with javascript.
+
+
