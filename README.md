@@ -20,7 +20,7 @@ Talks by year
 =============
 
 * _why the Lucky Stiff 
-  * railsconf 2006 - http://www.scribemedia.org/2006/11/25/why-oh-why/
+  * railsconf 2006 - http://www.scribemedia.org/2006/11/25/why-oh-why/ - playing with his band
   * ART && CODE symposium 2009 - http://vimeo.com/5047563
 * Sandi Metz
 * Matz
