@@ -19,6 +19,22 @@ Carol todo
 Talks by year
 =============
 
+* RubyConf 2001 speakers
+  * Andy Hunt
+  * Avi Bryant
+  * Chad Fowler
+  * Chet Hendrickson
+  * David A. Black
+  * Emil Ong
+  * Ken Rubotzky
+  * Lyle Johnson
+  * Nathaniel Talbott
+  * Pete McBreen
+  * Ron Jeffries
+  * Ryan Leavengood
+  * Yukihiro Matsumoto
+
+
 * _why the Lucky Stiff 
   * railsconf 2006 - http://www.scribemedia.org/2006/11/25/why-oh-why/ - playing with his band
   * railsconf 2006 - http://youtu.be/f7HIbTijiYw?t=2m55s - talk
