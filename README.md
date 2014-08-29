@@ -30,6 +30,9 @@ Talks by year
 * DHH - intro rails ?
 * Tenderlove (+ gorby and seatac)
 * Corey Haines
+* David Black
+* Chad Fowler
+* Glenn Vanderburg
 
 
 * 2013 - Jim Weirich at SCRC
