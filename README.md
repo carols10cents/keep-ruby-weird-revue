@@ -30,6 +30,8 @@ People
   * more video links here http://viewsourcecode.org/why/
   * Hair - brown bob, sunglasses, suit jacket, flowers in the pocket, big wide smile
 1. Sandi Metz
+  * Goruco 2009 - http://confreaks.com/videos/240-goruco2009-solid-object-oriented-design
+  * http://confreaks.com/presenters/211-sandi-metz
 1. DHH - intro rails ?
   * 2006 - DHH at the 1st RailsConf 2006 
     * in pieces at http://www.scribemedia.org/2006/07/09/dhh/
