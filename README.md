@@ -87,6 +87,11 @@ TEN* YEARS OF RUBY CONFERENCES
 
 (fade in)
 a dramatic revue
+
+---
+
+\* the first rubyconf was 2001. we're sorry, we did the math with javascript.
+
 ---
 
 by <3 Jeremy! Flores
@@ -97,9 +102,6 @@ and Carol (Nichols || Goulding)
 with much assistance from puppetmaster
 Brenna Flood
 
----
-
-\* the first rubyconf was 2001. we're sorry, we did the math with javascript.
 
 
 moar slides
