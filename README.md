@@ -64,13 +64,6 @@ People
   * Ryan Leavengood
 * Glenn Vanderburg
 
-Talks by year
-=============
-
-
-
-* 2014 - Meta, US
-
 
 Supplies to request from organizers
 ===================================
