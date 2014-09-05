@@ -87,9 +87,33 @@ TEN* YEARS OF RUBY CONFERENCES
 
 (fade in)
 a dramatic revue
+---
+
+by <3 Jeremy! Flores
+and Carol (Nichols || Goulding)
+
+---
+
+with much assistance from puppetmaster
+Brenna Flood
 
 ---
 
 \* the first rubyconf was 2001. we're sorry, we did the math with javascript.
 
 
+moar slides
+
+
+---
+
+Thanks
+
+* Brenna Flood
+* Confreaks
+* All the speakers
+
+---
+
+Links to all the talks featured can be found at
+[some cute short URL]
