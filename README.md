@@ -23,6 +23,7 @@ People
 ### Puppets
 
 1. Yukihiro Matsumoto
+  * rubyconf 2003 slides: http://www.rubyist.net/~matz/slides/rc2003/mgp00003.html
 1. _why the Lucky Stiff 
   * railsconf 2006 - http://www.scribemedia.org/2006/11/25/why-oh-why/ - playing with his band
   * railsconf 2006 - http://youtu.be/f7HIbTijiYw?t=2m55s - talk
