@@ -40,6 +40,7 @@ People
     * White RailsConf t-shirt, gray hoodie, blonde hair with the little flip in the front
 1. Tenderlove (+ gorby and seatac)
 1. Corey Haines
+  * 2011 GoGaRuCo - Fast rails tests https://www.youtube.com/watch?v=bNn6M2vqxHE
 1. Jim Weirich (+ drone)
   * 2013 - Jim Weirich at SCRC
 1. Jeremy
