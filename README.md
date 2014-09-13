@@ -34,6 +34,7 @@ People
   * Goruco 2009 - http://confreaks.com/videos/240-goruco2009-solid-object-oriented-design
   * http://confreaks.com/presenters/211-sandi-metz
 1. DHH - intro rails ?
+  * 2005 FISL in Brazil - Build a blog in 15 min https://www.youtube.com/watch?v=Gzj723LkRJY&feature=youtu.be
   * 2006 - DHH at the 1st RailsConf 2006 
     * in pieces at http://www.scribemedia.org/2006/07/09/dhh/
     * slides: http://www.slideshare.net/vishnu/discovering-a-world-of-resources-on-rails
