@@ -7,74 +7,56 @@ Jeremy todo
 ===========
 
 * Experiment with projector, camera, slides, puppet stand-in
-* Prototypes
+* Puppets
 
 Carol todo
 ==========
 
-* Look up talks
-* Representative characteristics - pictures, lists
+* Make a drone
+* Write a script agnostic of who is playing/reading what
 
-People
-======
+Outline of people and talks
+===========================
 
-## Probs:
-
-### Puppets
+In chronological order:
 
 1. Yukihiro Matsumoto
-  * rubyconf 2003 slides: http://www.rubyist.net/~matz/slides/rc2003/mgp00003.html
-1. _why the Lucky Stiff 
-  * railsconf 2006 - http://www.scribemedia.org/2006/11/25/why-oh-why/ - playing with his band
-  * railsconf 2006 - http://youtu.be/f7HIbTijiYw?t=2m55s - talk
-  * ART && CODE symposium 2009 - http://vimeo.com/5047563
-  * more video links here http://viewsourcecode.org/why/
-  * Hair - brown bob, sunglasses, suit jacket, flowers in the pocket, big wide smile
-1. Sandi Metz
-  * Goruco 2009 - http://confreaks.com/videos/240-goruco2009-solid-object-oriented-design
-  * http://confreaks.com/presenters/211-sandi-metz
-1. DHH - intro rails ?
+  * 2003 rubyconf keynote
+    * slides: http://www.rubyist.net/~matz/slides/rc2003/mgp00003.html
+    * notes: http://rubystuff.org/rubyconf/notes03.outline
+
+1. DHH
   * 2005 FISL in Brazil - Build a blog in 15 min https://www.youtube.com/watch?v=Gzj723LkRJY&feature=youtu.be
-  * 2006 - DHH at the 1st RailsConf 2006 
-    * in pieces at http://www.scribemedia.org/2006/07/09/dhh/
-    * slides: http://www.slideshare.net/vishnu/discovering-a-world-of-resources-on-rails
-    * White RailsConf t-shirt, gray hoodie, blonde hair with the little flip in the front
+
+1. _why the Lucky Stiff
+  * 2006 railsconf - http://youtu.be/f7HIbTijiYw?t=2m55s
+
 1. Tenderlove (+ gorby and seatac)
+  * ???????
+
 1. Corey Haines
   * 2011 GoGaRuCo - Fast rails tests https://www.youtube.com/watch?v=bNn6M2vqxHE
+
+1. Sandi Metz
+  * 2013 wicked good ruby keynote - http://confreaks.com/videos/2723-wickedgoodruby-opening-keynote-sandi-metz-tells-your-future
+
 1. Jim Weirich (+ drone)
-  * 2013 - Jim Weirich at SCRC
-1. Jeremy
-1. Carol
+  * 2013 - SCRC Friendly Flying Robots with Ruby - http://steelcityruby.confbots.com/video/72709097
+
+1. Jeremy + Carol
+  * 2014 - Keep Ruby Weird
 
 ### Lightning talks (Animation? Video? no puppets)
 
 1. Bryan Liles, TATFT, Ruby Hoedown 2008 - https://www.youtube.com/watch?v=iwUR0kOVNs8 might have been done before then
 2. Gary Bernhart, WAT, Codemash 2012 - https://www.destroyallsoftware.com/talks/wat
 
-## Probs not:
-
-* RubyConf 2001 speakers
-  * Andy Hunt
-  * Avi Bryant
-  * Chad Fowler
-  * Chet Hendrickson
-  * David A. Black
-  * Emil Ong
-  * Ken Rubotzky
-  * Lyle Johnson
-  * Nathaniel Talbott
-  * Pete McBreen
-  * Ron Jeffries
-  * Ryan Leavengood
-* Glenn Vanderburg
-
 
 Supplies to request from organizers
 ===================================
 
 * Table
-* 
+*
 
 
 After - wat do with puppets?
