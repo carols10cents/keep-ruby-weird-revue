@@ -507,3 +507,72 @@ should be light (both syntax and implementation)" afterwards.
 							matz.
 
 
+
+# From Jim Weirich https://web.archive.org/web/20031206085208/http://onestepback.org/index.cgi/Tech/Conferences/RubyConf2003/
+
+Visions of the Future - Keynote Address (Yukihiro Matsumoto)
+
+Finally, the moment we’ve all been waiting for, to hear news about Rite and Ruby 2. After an (short) introduction by David Black, Matz begins by saying that Ruby is "Good Enough" and that’s why we are here. So the real topic is "How Ruby Sucks", and what we will be doing about it.
+
+First of all, Matz drew the distinction between what is Ruby 2 and what is Rite. Ruby 2 is the next version of the Ruby language. Matz plans to take advantage of the major version upgrade and introduce some things to clean up the language that are not necessarily backwards compatible. Rite refers specifically to the VM for Ruby 2.
+
+So, with that in mind, here are some things that may by in Ruby 2.
+
+Note:
+    The following is a paraphrase of the information Matz provided. The talk generally moved too fast for me to capture all the details, but I tried to capture the overall gist of the topic. If there are any inaccuracies, it is entirely my fault.
+Note 2:
+    I discovered later that Chad Fowler had logged onto IRC during the keynote talk, and was streaming this same information into the IRC channel. Someone not at the conference was then taking the IRC information and updating the Ruby wiki pages in real time. That’s pretty cool.
+
+    Local Variable scope. Block parameters will be block local, hiding any existing variables. Also, local variables created by "eval" will
+    Instance Variables. @_foo will be truely private (not protected). Or maybe @foo will be private and @_foo protected. Matz hasn’t decided yet.
+    Constant Lookup. New rule will check enclosing class, then all superclasses, then one level of nesting classes. This simplifies the rules for constant lookup.
+    Class Variables. Now class variables will will be local to the class or module. Use accessors if you wish to access class variables from a larger scope.
+
+    Question:
+        How will class variables be different from class instance variables?
+    Answer:
+        Class instance variables are normal instance variables of the class object. Class variables will be more like static variables that are scoped by the class.
+
+    Statements and Expressions. No implicit string concatenation (use "+"). Parenthesis will cause line continuations. Statement grouping by parenthesis will be disallowed, use begin/end instead.
+    Multiple Values. Multiple value assignment is confusing. We can either separate arrays and multiple values strictly by syntax. Or we could use a subclass Array::Values < Array to return values. Matz hasn’t decided which solution he will go with. (There was a lot of questions and comments on this item).
+    Method Visibilities. Private may be in a separate namespace from public/protected.
+    Range in Condition. This is confusing. No one remembers the exact semantics (even Matz)
+    Keyword Arguments. Finally! Here’s the scoop:
+
+      def foo(a, b: 42, **keys)
+        p [a,b,keys]
+      end
+      foo(1)               => [1,42,{}]
+      foo(2, b: 5)         => [2,5,{}]
+      foo(3, b: 4, c: 6)   => [3,4,{:c=>6}]
+
+    Some Smalltalkers wanted an optional colon after foo. Matz said no.
+    New Hash Literal. A new form of Hash literal will be available.
+
+      { a: 1, b: 2, c: 3 }  == { :a => 1, :b => 2, :c => 3 }
+
+    Method Combination. Pre, Post and Wrap method combinations will be available. These methods are modelled after the CLOS before/after/around modifiers.
+
+     class Foo
+       def foo:pre();  p "pre"; end
+       def foo:post(); p "post"; end
+       def foo:wrap(); p "wrap pre";   super;   p "wrap post"; end
+       def foo();      p ;foo"; end
+     end
+
+    prints …
+
+     wrap pre
+     pre
+     foo
+     post
+     wrap post
+
+    Selector Namespace. It will be possible to modify the behaviors of selections within statically scoped namespace. Details are subject to change.
+    Optional Type. Current strong typing experiments are class/module based. Matz is exploring options, but wants any solution to be signature based and efficient.
+
+Matz is interested hearing about ideas, so he is encouraging RCRs (Ruby Change Requests) for a limited time (say March 2004). He wants more than mere "could we change it this way" type of requests, but RCRs should contain an abstract, motivation, proposal and rationale. Mats demonstrates an "proper" RCR#1 with the proposal to remove "proc" from the language.
+
+After talking about Ruby 2, the language; Matz moved on to talk a bit about Rite, the VM for Ruby 2. Ruby 1.9 will be a testing ground for some items targeted for Rite. It sounds like the big push will be for dealing with M17N. The new RegEx engine (handling M17N) will be in 1.9.
+
+You can find the slides at: www.rubyist.net/~matz/slides/rc2003/
