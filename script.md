@@ -63,6 +63,37 @@ All right. Next thing. Setting it up with a database-- that's the only piece of 
 
 So now we're going to use something called scaffold. Scaffold is a quick way of putting your module--Whoops! we need to restart the server when we change the database configuration. so, let's just do that. Um, scaffolding is a way of easily putting a model object online in a way that you can edit it. Whoops! We didn't create this, this was created for us just by the scaffolding thing. Now we're going to create a new post, just... "hello brazil". Yaaay! Post was successfully created.
 
+# _why
+
+# Tenderlove
+
+O-M-G! O-M-G! Happy Thursday everybody! Welcome to Ruby Conf Ten! I love that it's ruby conf X because i think of it as the extreme ruby conf.
+
+I have to put this slide in because every time I give a talk I'm actually very nervous up here, and a friend of mine told me, when you're on stage, just think about "What would freddie mercury do?" So I put this up here to remind myself to think about that and calm down.
+
+So today we're going to look at some tips and tricks for improving the performance in your ruby code by looking at things I used to improve the performance of ARel.
+
+So how did I get started with this? There's a feature I've wanted to add to Rails for a very long time, and that is prepared statement caching, and we'll actually have that feature in Rails 3 point 1. In order to add this to active record, a deeper understanding was required of active record. So I started diving in and fixing bugs, going through the lighthouse ticket tracker and fixing bugs in active record. And I ran across one that said active record is five times slower than in rails 2.3.5. This was before rails 3 was released and you can go read up on the ticket here. And I thought to myself, five times slower? really? five times slower? how is that possible? and it *is* possible! It really was five times slower! So I thought that I'd look into this, and I thought, what could possibly go wrong?
+
+So, motivation. Why do we care about speed? We all know that ruby can't scale, and rails can't scale, and yet, we're all rubyists, right?
+
+As a tangent, I've discovered the technique for scaling ruby. and it goes like this. it's very simple, like this. Look at that scale. It scales very beautifully. Now, the thing is, the difference between ruby and java is that when you scale java, it doesn't pixellate like this.
+
+But I'm asking you all why you want to make your code faster, and really, I'm just trolling you. Usually, the slow code is linked to poor code, so if we identify bits that are slow, we can find bad code in our system and get rid of it.
+
+When should I make my code faster? Easy answer to this. When it isn't fast enough. But then the question is "What is fast enough?" Whenever I think about this, I think, well, do people notice it? and what are you comparing it to? In my mind, fast enough means that it finishes in a reasonable amount of time and that is subjective.
+
+And really, I'm telling you all these things but I don't want you to believe me. I want you to think critically and go out and look at this stuff and analyze it for yourself.
+
+For performance, we need to reduce method calls, branching and looping, and we need to reduce objects. What I think is interesting is that, for clean code, the things to reduce are exact
+
+So the things we need to minimize for minimizing our use of time and space are exactly the things we need to minimize for clean code, so therefore, clean code equals performant code.
+
+So conclusion, aka the things I've learned: System impact. It looks like this, and right there in the middle is a very depressing time. I learned: When should I rewrite? I see it like this: the earliest you should rewrite is when Ryan Davis says so, and the latest you should rewrite is when I say so you should probably pick a time in between there.
+
+We emphasize the art of code, but we should not forget the science.
+
+
 
 
 

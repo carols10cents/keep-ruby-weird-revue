@@ -32,7 +32,7 @@ In chronological order:
   * 2006 railsconf - http://youtu.be/f7HIbTijiYw?t=2m55s
 
 1. Tenderlove (+ gorby and seatac)
-  * ???????
+  * 2010 Rubyconf ZOMG why is this code so slow http://confreaks.com/videos/427-rubyconf2010-zomg-why-is-this-code-so-slow
 
 1. Corey Haines
   * 2011 GoGaRuCo - Fast rails tests https://www.youtube.com/watch?v=bNn6M2vqxHE
