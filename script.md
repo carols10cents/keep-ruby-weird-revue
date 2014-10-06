@@ -65,6 +65,8 @@ So now we're going to use something called scaffold. Scaffold is a quick way of 
 
 # _why
 
+To code in ruby is really to love. It stirs you inside. When I walk down the street and look into people's eyes I can see their excitement about learning rails. Y'know? I can see that they know David Hennemeier Hanson, that they want to be him, they want his fine apparel, and his ways, y'know. There's a rushing out in the streets to get here. And that's pretty cool. It seems like this is the sort of thing we need to start administering to our children. It's the sort of thing that you... just... really can't be whole without, y'know?
+
 # Tenderlove
 
 O-M-G! O-M-G! Happy Thursday everybody! Welcome to Ruby Conf Ten! I love that it's ruby conf X because i think of it as the extreme ruby conf.
@@ -92,8 +94,6 @@ So the things we need to minimize for minimizing our use of time and space are e
 So conclusion, aka the things I've learned: System impact. It looks like this, and right there in the middle is a very depressing time. I learned: When should I rewrite? I see it like this: the earliest you should rewrite is when Ryan Davis says so, and the latest you should rewrite is when I say so you should probably pick a time in between there.
 
 We emphasize the art of code, but we should not forget the science.
-
-
 
 
 
