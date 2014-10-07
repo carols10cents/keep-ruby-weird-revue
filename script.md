@@ -2,7 +2,7 @@
 
 Slide 1
 
-Hello, my name is Yukihiro Matsumoto. Thank you for coming to RubyConf 2003, it's nice to see a bigger crowd this year-- about 45 people!
+Hello, my name is Yukihiro Matsumoto. Thank you for coming to RubyConf 2003, it's nice to see a bigger crowd this year-- about 45 people! Last year we only had 33 or so.
 
 Slide 2
 
@@ -95,7 +95,39 @@ So conclusion, aka the things I've learned: System impact. It looks like this, a
 
 We emphasize the art of code, but we should not forget the science.
 
+# Corey
 
+I want to talk about why we are at this point. Why we have these test suites that are so long. And I want to go back to the beginning. So years ago, we were introduced to Rails, to the idea of MVC on the web, we were learning about it, we watched the 10 minute blog video, we thought "Awesome, I can do that." Rails came with something that was an amazing step forward for us. It came with a test folder. It said you should be writing automated tests.
+
+So because we had this suite of tests, we were able to start experimenting with design. 7:10
+
+10:18 large codebases
+
+10:50 test first v test driven
+
+13:00 primadonna tester
+
+15:00 underwhelming part - techniques
+
+16:25 - one culprit, rails
+
+17:14 - every git repo starts with a branch no-rails
+
+18:50 - nothing cares whether it's coming from the database
+
+19:25 - it's faster to just run all the tests than to autocomplete one test file
+
+20:00 - why not start taking the next step and isolating yourself from rails
+
+22:00 - wee lass with visual basic => delegation
+
+23:10 - compiled lang on windows faster than rails = sad
+
+one of those things you have to try
+
+25:50 - just one
+
+26:41 - that's my cat
 
 
 

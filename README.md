@@ -18,6 +18,8 @@ Carol todo
 Outline of people and talks
 ===========================
 
+gist of links to resources to make public and give a nice URL to - https://gist.github.com/carols10cents/405bc401dbd61c96b006
+
 In chronological order:
 
 1. Yukihiro Matsumoto
