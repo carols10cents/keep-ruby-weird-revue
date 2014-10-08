@@ -76,6 +76,14 @@ So now we're going to use something called scaffold. Scaffold is a quick way of 
 
 To code in ruby is really to love. It stirs you inside. When I walk down the street and look into people's eyes I can see their excitement about learning rails. Y'know? I can see that they know David Hennemeier Hanson, that they want to be him, they want his fine apparel, and his ways, y'know. There's a rushing out in the streets to get here. And that's pretty cool. It seems like this is the sort of thing we need to start administering to our children. It's the sort of thing that you... just... really can't be whole without, y'know?
 
+19:00 - double splat
+
+19:45 - not worth your $500
+
+20:00 - matz is super cool, unruffled, matz is nice
+
+22:30 - creator is biggest weakness? whaa?
+
 # Tenderlove
 
 O-M-G! O-M-G! Happy Thursday everybody! Welcome to Ruby Conf Ten! I love that it's ruby conf X because i think of it as the extreme ruby conf.
