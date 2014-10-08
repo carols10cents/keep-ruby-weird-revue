@@ -2,7 +2,7 @@
 
 Slide 1
 
-Hello, my name is Yukihiro Matsumoto. Thank you for coming to RubyConf 2003, it's nice to see a bigger crowd this year-- about 45 people! Last year we only had 33 or so.
+Hello, my name is Yukihiro Matsumoto, also known as Matz. Thank you for coming to RubyConf 2003, it's nice to see a bigger crowd this year! In our first year in 2001, we only had 33 or so, and last year, maybe 50.
 
 Slide 2
 
@@ -14,36 +14,45 @@ So I am going to talk about How Ruby Sucks and how we can make it better.
 
 Slide 4
 
-[...summarize bullet points]
+Ruby has these problems - for example, it's slow and inconsistent. How can we fix these?
 
 Slide 5
 
-[...mention what Rite is, that Ruby2 will have breaking changes, that need to be free of 1.8 maintenance first. do not know what the changes will be yet, have a lot of ideas]
+With a major version change from 1.0 to 2.0, this is the opportunity to take one big step and make changes that may not be backwards compatible, but will make Ruby better.
 
-Slide 24
+Slide 6
 
-[...here is something i am considering]
+To clarify, Ruby 2 is the next version of the Ruby language, and Rite is the virtual machine for Ruby 2.
+
+Slide 7
+
+The path we will take to Ruby 2 depends on being free of 1.8 maintenance. Hopefully that will be soon. Then in 1.9, we will work on the syntax changes. I do not know what those changes will be yet, but there will be experiments.
+
+Once we know what the syntax will be, then we can work on the implementation in Rite.
+
+Slide 8
+
+Rite will be vaporware for a long time, unfortunately. I am still waiting for a Son-Shi to finish Rite for me!
+
+Slide 9
+
+So here are some things that we might experiment with for Ruby 2.
 
 Slide 26
 
-[...keyword arguments]
+For example, here is a way we could have keyword arguments. Here, `a` is positional and the `b` argument is a keyword argument and the order does not matter. If you don't specify anything for the double star argument, it will be nil. You must use the keyword argument name, in this case `b`, if you specify it, if not it will be some kind of error but I have not decided what kind of error yet.
 
 Slide 27
 
-[...hash syntax]
+This is a new hash literal syntax that we might have, that would be equivalent to the current syntax we have at the bottom.
 
 Slide 28
 
-[...method hooks]
-
-Slide 29
-
-[...seletor namespace]
-
+Maybe we could have method hooks that would let you add code to arbitrary methods to be run before or after. `def` *may* return an object, I'm not sure yet. If you try to add a pre method to a method that does not exist, that would throw an error. Or maybe not.
 
 Slide 32
 
-I would like help from you in the form of Ruby Change Requests for a time, until about March 2004. These would be proposals asking if we could change Ruby in this way or that way. RCRs should contain an abstract, motivation, proposal and rationale. They can be big changes that would not be backwards compatible.
+As you can see, I am undecided about many of these changes. I would like help from you in the form of Ruby Change Requests for a time, until about March 2004. These would be proposals asking if we could change Ruby in this way or that way. RCRs should contain an abstract, motivation, proposal and rationale. They can be big changes that would not be backwards compatible. I think I will reject most of them, but thinking about how to make Ruby better by many brains is better than just one small brain.
 
 [fade out]
 
