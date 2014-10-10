@@ -74,7 +74,15 @@ So now we're going to use something called scaffold. Scaffold is a quick way of 
 
 # _why
 
-To code in ruby is really to love. It stirs you inside. When I walk down the street and look into people's eyes I can see their excitement about learning rails. Y'know? I can see that they know David Hennemeier Hanson, that they want to be him, they want his fine apparel, and his ways, y'know. There's a rushing out in the streets to get here. And that's pretty cool. It seems like this is the sort of thing we need to start administering to our children. It's the sort of thing that you... just... really can't be whole without, y'know?
+To code in ruby is really to love. It stirs you inside. When I walk down the street and look into people's eyes I can see their excitement about learning rails. Y'know? I can see that they know David Hennemeier Hanson, that they want to be him, they want his fine apparel, and his ways, y'know. There's a rushing out in the streets to get here. And that's pretty cool. It seems like this is the sort of thing we need to start administering to our children, for their health. It's the sort of thing that you... just... really can't be whole without, y'know?
+
+So one of the ways that I've been messing with ruby is with cartoons and stuff. And there's a science behind this. This is incredibly thought out. And, i mean, wow, foxes, y'know, of all animals. These are the foxes that I use in the book I'm working on, and it's sort of a reactionary work to try and do something that a technical book *shouldn't* do.
+
+The eyes of the foxes. Round and blank. There's nothing there, right? What do you have to hold onto in a technical book, y'know? What drives you to read it, exactly? Is there a personality there? Is there feeling, is there humanism, is there humanity in a technical manual? Not really, there shouldn't be. The eyes should be blank. They should be staring straight ahead, poring through pages and pages. Reference material. You gotta get this down. You cannot blink. That's the foxes, they never blink in the book. And that's an allegory. Of you! If they stare, you stare back! It helps keep you focused.
+
+(on the short one)
+
+This is the one I like. Cause you can't ever see anything about him. He's always down there at the bottom. And that's supposed to be sort of frustrating. I know I don't have incredible things to teach in the book, I'm not an incredible programmer or anything like that, but I figure people will keep reading to see a little bit more of the short one, because maybe there's something down there.
 
 19:00 - double splat
 
