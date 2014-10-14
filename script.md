@@ -138,6 +138,19 @@ In my definition, it's all about how you react to the pain of tests. In test-fir
 
 So let's talk about the underwhelming part of this-- some techniques for doing this. The key is to take what we already know. So we isolate ourselves from 3rd party APIs, it's a standard design technique, and then we let our tests get like this. So ask yourselves why your tests take 20 seconds to start up-- and there's one culprit, rails. So why not take the idea of isolation, and go one step further. What's the biggest 3rd party thing that I'm dependent on? Rails!
 
+# Sandi
+
+1:43 - i'm here today to tell your future :)
+
+25:30 - your fortune
+
+27:45 - first programming job
+
+31:00 - still morning in our community
+
+33:15 - habitat for humanity's volunteer mgmt software sucks
+
+34:30 - wind at our backs
 
 
 
