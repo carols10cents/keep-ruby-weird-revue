@@ -122,38 +122,21 @@ We emphasize the art of code, but we should not forget the science.
 
 # Corey
 
-I want to talk about why we are at this point. Why we have these test suites that are so long. And I want to go back to the beginning. So years ago, we were introduced to Rails, to the idea of MVC on the web, we were learning about it, we watched the 10 minute blog video, we thought "Awesome, I can do that." Rails came with something that was an amazing step forward for us. It came with a test folder. It said you should be writing automated tests.
+So how many of you do TDD? How many of you, when you run your tests, sit there and wait, 10, 20, 30 seconds-- admittedly, it gives you time to be witty on twitter... but, if you think about it, if you wait 20 seconds each time you run your tests in the TDD red-green-refactor cycle, that's about 100 seconds for code that took you 1 second to write.
 
-So because we had this suite of tests, we were able to start experimenting with design. 7:10
+Wouldn't it be nicer if your tests looked like this?
 
-10:18 large codebases
+I want to talk about why we are at this point. Why we have these test suites that are so long. And I want to go back to the beginning. So years ago, we were introduced to Rails, to the idea of MVC on the web, we were learning about it, we watched the 10 minute blog video, we thought "Awesome, I can do that." Rails *came* with something that was an *amazing* step forward for us. It came with a test folder. It said you should be writing automated tests.
 
-10:50 test first v test driven
+So as we're learning how to do MVC on the web, and we start talking about fat models and skinny controllers. And people talk about how we really should be putting business logic in our models-- the wonderful thing is that while we're experimenting with design and learning how to do rails applications, we can run our tests.
 
-13:00 primadonna tester
+Today, we've started seeing large codebases that are causing test suites to take 15 minutes, an hour. A lot of it boils down to the difference between Test First and Test Driven Development.
 
-15:00 underwhelming part - techniques
+The rails test suite, as wonderful as the testing paradigm was there, there was a fundamental disconnect in that they weren't a test suite designed to do test-driven development, they were a test suite designed to do test-first development.
 
-16:25 - one culprit, rails
+In my definition, it's all about how you react to the pain of tests. In test-first dev, you change your tests. So you might build things like spork or specjour, which alleviate the pain in testing by altering the way your tests run. But they're just band-aids. In test-driven, when you have pain, you change your *design*. That's the *point* of test-driven development.
 
-17:14 - every git repo starts with a branch no-rails
-
-18:50 - nothing cares whether it's coming from the database
-
-19:25 - it's faster to just run all the tests than to autocomplete one test file
-
-20:00 - why not start taking the next step and isolating yourself from rails
-
-22:00 - wee lass with visual basic => delegation
-
-23:10 - compiled lang on windows faster than rails = sad
-
-one of those things you have to try
-
-25:50 - just one
-
-26:41 - that's my cat
-
+So let's talk about the underwhelming part of this-- some techniques for doing this. The key is to take what we already know. So we isolate ourselves from 3rd party APIs, it's a standard design technique, and then we let our tests get like this. So ask yourselves why your tests take 20 seconds to start up-- and there's one culprit, rails. So why not take the idea of isolation, and go one step further. What's the biggest 3rd party thing that I'm dependent on? Rails!
 
 
 
