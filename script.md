@@ -38,7 +38,7 @@ For example, here is a way we could have keyword arguments. Here, `a` is positio
 
 ## Slide 27
 
-This is a new hash literal syntax that we might have, that would be equivalent to the current syntax we have.
+This is a new hash literal syntax that we might have, that would be equivalent to the current syntax below.
 
 ## Slide 28
 
@@ -47,22 +47,25 @@ Maybe we could have method hooks that would let you add code to arbitrary method
 ## Slide 32
 
 As you can see, I am undecided about many of these changes. I would like help from you in the form of Ruby Change Requests for a time, until about March 2004. These would be proposals asking if we could change Ruby in this way or that way. RCRs should contain an abstract, motivation, proposal and rationale. They can be big changes that would not be backwards compatible. I think I will reject most of them, but thinking about how to make Ruby better by many brains is better than just one small brain.
-
+240
 # DHH
 
-Here we go. So I hope you can read the text, the first thing we do is called the rails command... to generate the skeleton of the application. See, so, it generated a bunch of things, a bunch of files, and then the next step, the very next step? is starting the ruby server. So seeing that everything works. The only prerequisite to this is that you have ruby on rails installed.
+Here we go. the first thing we do is called the rails command... to generate the skeleton of the application. See, so, it generated a bunch of things, and then the next step, the very next step? is starting the ruby server. So seeing that everything works. The only prerequisite to this is that you have ruby on rails installed.
 
 Whoops! It worked! We are up and running. We have the web server running, and it's saying it worked.
 
-And now, let's create the first thing. We're going to create the controller that's gonna run this blog. So we have this "script generate controller" which is like a macro for creating these things. So now we have a blog controller and we're going to see if that works.
+And now, let's create the first thing. We're going to create the controller that's gonna run this blog. So we have this "script generate controller" which is like a macro for creating these things.
 
-Whoops! We didn't have any actions in there, usually, so we're going to create the index action. The index action is the first action, you see the mapping that we're going to do. And we're just going to say "Hello world". And we're going to reload, and Hello World! That's how much work you have to do to get to "Hello world"! That's not a lot. So this was just saying "hello world" from within the controller, not very interesting. Normally we want the nice model view controller split so now we create a template.
+So now we have a blog controller and we're going to see if that works.
 
-Look at all the things I'm *not* doing. Look at all the configuration I'm *not* writing. All these things are mapped together just automatically. Just by saying blog up here maps directly to the blogging controller and just by having index maps directly to the index template. Hello from the template. And now we even remove the action and show that it could go all the way to the template without having an action.
+Whoops! We didn't have any actions in there, so we're going to create the index action. The index action is the first action, you see the mapping that we're going to do. And we're just going to say "Hello world". And we're going to reload, and Hello World! That's how much work you have to do to get to "Hello world"! That's not a lot. So this was just saying "hello world" from within the controller, not very interesting. Normally we want the nice model view controller split so now we create a template.
 
-All right. Next thing. Setting it up with a database-- that's the only piece of configuration you really need to do because, unfortunately, rails can't read your mind yet. So it doesn't know your password. Thankfully. So we create the first database, we're going to call it blog development, and we're going to create the first table. So a blog should have posts, right? So posts, in plural. We create the table, just having an id, by default all these model tables just have an ID, and we're just going to start out simple, just with a title. So all these posts are just going to have a title by now. And i am going to create the model. i just created the table for it but i dont have an object for it yet, but now i also created the post model. so you see over here, it's just an empty one again, but just having that already gives it a ton of capability because it descended from the active record thing.
+Look at all the things I'm *not* doing. Look at all the configuration I'm *not* writing. All these things are mapped together just automatically. Just by saying blog maps directly to the blogging controller and just by having index maps directly to the index template. Hello from the template. And now we even remove the action and show that it could go all the way to the template without having an action.
+
+All right. Next thing. Setting it up with a database-- that's the only piece of configuration you really need to do because, unfortunately, rails can't read your mind yet. So it doesn't know your password. Thankfully. So we create the first database, we're going to call it blog development, and we're going to create the first table. So a blog should have posts, right? So posts, in plural. We create the table, just having an id, by default all these model tables just have an ID, and we're just going to start out simple, just with a title. So all these posts are just going to have a title by now. And i am going to create the model. i just created the table for it but i dont have an object for it yet, but now i also created the post model. so you see, it's just an empty one again, but just having that already gives it a ton of capability because it descended from the active record thing.
 
 So now we're going to use something called scaffold. Scaffold is a quick way of putting your module--Whoops! we need to restart the server when we change the database configuration. so, let's just do that. Um, scaffolding is a way of easily putting a model object online in a way that you can edit it. Whoops! We didn't create this, this was created for us just by the scaffolding thing. Now we're going to create a new post, just... "hello brazil". Yaaay! Post was successfully created.
+516
 
 # _why
 
@@ -81,6 +84,8 @@ The eyes of the foxes. Round and blank. There's nothing there, right? What do yo
 ## the short one
 
 This is the one I like. Cause you can't ever see anything about him. He's always down there at the bottom. And that's supposed to be sort of frustrating. I know I don't have incredible things to teach in the book, I'm not an incredible programmer or anything like that, but I figure people will keep reading to see a little bit more of the short one, because maybe there's something down there.
+
+704
 
 19:00 - double splat
 19:45 - not worth your $500
@@ -127,9 +132,11 @@ So, motivation.
 
 Why do we care about speed? We all know that ruby can't scale, and rails can't scale, and yet, we're all rubyists, right?
 
+As a tangent, I've discovered the technique for scaling ruby. and it goes like this. it's very simple, like this.
+
 ## animated gif
 
-As a tangent, I've discovered the technique for scaling ruby. and it goes like this. it's very simple, like this. Look at that scale. It scales very beautifully. Now, the thing is, the difference between ruby and java is that when you scale java, it doesn't pixellate like this.
+Look at that scale. It scales very beautifully. Now, the thing is, the difference between ruby and java is that when you scale java, it doesn't pixellate like this.
 
 ## trollface
 
@@ -163,9 +170,9 @@ So the things we need to minimize for minimizing our use of time and space are e
 
 ## 100 slides later
 
-So conclusion, aka the things I've learned: System impact. It looks like this, and right there in the middle is a very depressing time. I learned: When should I rewrite? I see it like this: the earliest you should rewrite is when Ryan Davis says so, and the latest you should rewrite is when I say so you should probably pick a time in between there.
+So conclusion, aka the things I've learned: System impact. It looks like this, and right there in the middle is a very depressing time. I learned: When should I rewrite? I see it like this: the earliest you should rewrite is when Ryan Davis says so, and the latest you should rewrite is when I say so. you should probably pick a time in between there.
 
-We emphasize the art of code, but we should not forget the science.
+1025
 
 # Corey
 
@@ -200,6 +207,49 @@ So let's talk about the underwhelming part of this-- some techniques for doing t
 34:30 - wind at our backs
 
 # Jim
+
+Hi, I'm Jim Weirich, and I am here to talk about Friendly Flying Robots in Ruby! So I've noticed that this conference is a bit on the soft side, so now it's time for the geeky stuff! This code will have ruby code, it will have technical specifications, we are going to be interfacing with hardware, and we are going to have UML diagrams-- but only one! And the best part is, we are going to have flying robots.
+
+But first, I want to talk a little bit about terminology. People often talk about these things as drones-- I actually dislike that terminology because it brings these things to mind. So I try not to use that word.
+
+So we are going to talk about flying robots. But! When you program a drone in ruby, they become *friendly* flying robots! When skynet comes, wouldn't you rather it be programmed in ruby?
+
+Ok, are we ready? I always say hardware demos are the scariest demos to do because so much can go wrong.
+
+
+
+4:10 - how he got into this
+
+5:37 - yes i have sshed into my drone
+
+6:30 - software
+
+9:25 - keeping up with 30ms recommendation in ruby
+
+11:12 - yaw, pitch, roll demo
+
+14:11 - argus library
+
+16:18 - hardware demos are scary
+
+19:00 - irb/full power
+
+19:50 - there's more, we can get data back
+
+23:19 - c to ruby
+
+26:00 - UML
+
+28:40 - target demo
+
+31:30 - quick command called land
+
+34 - follow me
+
+
+
+
+
 
 # Jeremy and Carol
 
