@@ -18,19 +18,13 @@ Ruby has these problems - for example, it's slow and inconsistent. How can we fi
 
 Slide 5
 
-With a major version change from 1.0 to 2.0, this is the opportunity to take one big step and make changes that may not be backwards compatible, but will make Ruby better.
+With a major version change from 1.0 to 2.0, this is the opportunity to take one big step and make changes that may not be backwards compatible, but will make Ruby better. To clarify, Ruby 2 is the next version of the Ruby language, and Rite is the virtual machine for Ruby 2.
 
-Slide 6
-
-To clarify, Ruby 2 is the next version of the Ruby language, and Rite is the virtual machine for Ruby 2.
-
-Slide 7
+Slide 8
 
 The path we will take to Ruby 2 depends on being free of 1.8 maintenance. Hopefully that will be soon. Then in 1.9, we will work on the syntax changes. I do not know what those changes will be yet, but there will be experiments.
 
 Once we know what the syntax will be, then we can work on the implementation in Rite.
-
-Slide 8
 
 Rite will be vaporware for a long time, unfortunately. I am still waiting for a Son-Shi to finish Rite for me!
 
@@ -40,11 +34,11 @@ So here are some things that we might experiment with for Ruby 2.
 
 Slide 26
 
-For example, here is a way we could have keyword arguments. Here, `a` is positional and the `b` argument is a keyword argument and the order does not matter. If you don't specify anything for the double star argument, it will be nil. You must use the keyword argument name, in this case `b`, if you specify it, if not it will be some kind of error but I have not decided what kind of error yet.
+For example, here is a way we could have keyword arguments. Here, `a` is positional and the `b` argument is a keyword argument and the order does not matter. You must use the keyword argument name, in this case `b`, if you specify it, if not it will be some kind of error but I have not decided what kind of error yet.
 
 Slide 27
 
-This is a new hash literal syntax that we might have, that would be equivalent to the current syntax we have at the bottom.
+This is a new hash literal syntax that we might have, that would be equivalent to the current syntax we have.
 
 Slide 28
 
@@ -53,8 +47,6 @@ Maybe we could have method hooks that would let you add code to arbitrary method
 Slide 32
 
 As you can see, I am undecided about many of these changes. I would like help from you in the form of Ruby Change Requests for a time, until about March 2004. These would be proposals asking if we could change Ruby in this way or that way. RCRs should contain an abstract, motivation, proposal and rationale. They can be big changes that would not be backwards compatible. I think I will reject most of them, but thinking about how to make Ruby better by many brains is better than just one small brain.
-
-[fade out]
 
 # DHH
 
@@ -152,6 +144,9 @@ So let's talk about the underwhelming part of this-- some techniques for doing t
 
 34:30 - wind at our backs
 
+# Jim
+
+# Jeremy and Carol
 
 
 
