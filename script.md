@@ -203,6 +203,28 @@ So let's talk about the underwhelming part of this-- some techniques for doing t
 
 # Jeremy and Carol
 
+Carol: Hey Jeremy, did you hear about this new conference, Keep Ruby Weird??
+
+Jeremy: Yeah!!! It sounds like so much fun!!! We should sumbit a talk!!!
+
+Carol: Yes!!! What should we talk about?
+
+Jeremy: Hm, what do we like?
+
+Both: CONFERENCES!!!!!
+
+Jeremy: Oooh ooh oooh we could do a "best of" conference talks over the years!
+
+Carol: OMG that would be so cool! It would be a neat perspective on how Ruby and the community has evolved over the years... but... how can we make it *weird*??
+
+Both: Hmmmm.
+
+Brenna: Heeeyyy soooo I know friends who can teach us how to make awesome puppets...
+
+*stunned silence*
+
+Both: PUPPETS!!!!!!!!!!!
+
 
 
 
