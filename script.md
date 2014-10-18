@@ -1,26 +1,26 @@
 # Matz
 
-Slide 1
+## Slide 1
 
 Hello, my name is Yukihiro Matsumoto, also known as Matz. Thank you for coming to RubyConf 2003, it's nice to see a bigger crowd this year! In our first year in 2001, we only had 33 or so, and last year, maybe 50.
 
-Slide 2
+## Slide 2
 
 Why are we here? We are here because Ruby is Good Enough for many of our tasks. So we do not have to talk about that.
 
-Slide 3
+## Slide 3
 
 So I am going to talk about How Ruby Sucks and how we can make it better.
 
-Slide 4
+## Slide 4
 
 Ruby has these problems - for example, it's slow and inconsistent. How can we fix these?
 
-Slide 5
+## Slide 5
 
 With a major version change from 1.0 to 2.0, this is the opportunity to take one big step and make changes that may not be backwards compatible, but will make Ruby better. To clarify, Ruby 2 is the next version of the Ruby language, and Rite is the virtual machine for Ruby 2.
 
-Slide 8
+## Slide 8
 
 The path we will take to Ruby 2 depends on being free of 1.8 maintenance. Hopefully that will be soon. Then in 1.9, we will work on the syntax changes. I do not know what those changes will be yet, but there will be experiments.
 
@@ -28,23 +28,23 @@ Once we know what the syntax will be, then we can work on the implementation in 
 
 Rite will be vaporware for a long time, unfortunately. I am still waiting for a Son-Shi to finish Rite for me!
 
-Slide 9
+## Slide 9
 
 So here are some things that we might experiment with for Ruby 2.
 
-Slide 26
+## Slide 26
 
 For example, here is a way we could have keyword arguments. Here, `a` is positional and the `b` argument is a keyword argument and the order does not matter. You must use the keyword argument name, in this case `b`, if you specify it, if not it will be some kind of error but I have not decided what kind of error yet.
 
-Slide 27
+## Slide 27
 
 This is a new hash literal syntax that we might have, that would be equivalent to the current syntax we have.
 
-Slide 28
+## Slide 28
 
 Maybe we could have method hooks that would let you add code to arbitrary methods to be run before or after. `def` *may* return an object, I'm not sure yet. If you try to add a pre method to a method that does not exist, that would throw an error. Or maybe not.
 
-Slide 32
+## Slide 32
 
 As you can see, I am undecided about many of these changes. I would like help from you in the form of Ruby Change Requests for a time, until about March 2004. These would be proposals asking if we could change Ruby in this way or that way. RCRs should contain an abstract, motivation, proposal and rationale. They can be big changes that would not be backwards compatible. I think I will reject most of them, but thinking about how to make Ruby better by many brains is better than just one small brain.
 
@@ -66,47 +66,102 @@ So now we're going to use something called scaffold. Scaffold is a quick way of 
 
 # _why
 
+## the ruby potion
+
 To code in ruby is really to love. It stirs you inside. When I walk down the street and look into people's eyes I can see their excitement about learning rails. Y'know? I can see that they know David Hennemeier Hanson, that they want to be him, they want his fine apparel, and his ways, y'know. There's a rushing out in the streets to get here. And that's pretty cool. It seems like this is the sort of thing we need to start administering to our children, for their health. It's the sort of thing that you... just... really can't be whole without, y'know?
+
+## the foxes
 
 So one of the ways that I've been messing with ruby is with cartoons and stuff. And there's a science behind this. This is incredibly thought out. And, i mean, wow, foxes, y'know, of all animals. These are the foxes that I use in the book I'm working on, and it's sort of a reactionary work to try and do something that a technical book *shouldn't* do.
 
+## the eyes
+
 The eyes of the foxes. Round and blank. There's nothing there, right? What do you have to hold onto in a technical book, y'know? What drives you to read it, exactly? Is there a personality there? Is there feeling, is there humanism, is there humanity in a technical manual? Not really, there shouldn't be. The eyes should be blank. They should be staring straight ahead, poring through pages and pages. Reference material. You gotta get this down. You cannot blink. That's the foxes, they never blink in the book. And that's an allegory. Of you! If they stare, you stare back! It helps keep you focused.
 
-(on the short one)
+## the short one
 
 This is the one I like. Cause you can't ever see anything about him. He's always down there at the bottom. And that's supposed to be sort of frustrating. I know I don't have incredible things to teach in the book, I'm not an incredible programmer or anything like that, but I figure people will keep reading to see a little bit more of the short one, because maybe there's something down there.
 
 19:00 - double splat
-
 19:45 - not worth your $500
-
 20:00 - matz is super cool, unruffled, matz is nice
-
 22:30 - creator is biggest weakness? whaa?
 
 # Tenderlove
 
-O-M-G! O-M-G! Happy Thursday everybody! Welcome to Ruby Conf Ten! I love that it's ruby conf X because i think of it as the extreme ruby conf.
+O-M-G! O-M-G!
+
+Happy Thursday everybody!
+
+Welcome to Ruby Conf Ten!
+
+I love that it's ruby conf X because i think of it as the extreme ruby conf.
+
+I'm Aaron Patterson, aka Tenderlove.
 
 I have to put this slide in because every time I give a talk I'm actually very nervous up here, and a friend of mine told me, when you're on stage, just think about "What would freddie mercury do?" So I put this up here to remind myself to think about that and calm down.
 
-So today we're going to look at some tips and tricks for improving the performance in your ruby code by looking at things I used to improve the performance of ARel.
+So today we're going to look at some tips and tricks for improving the performance in your ruby code
 
-So how did I get started with this? There's a feature I've wanted to add to Rails for a very long time, and that is prepared statement caching, and we'll actually have that feature in Rails 3 point 1. In order to add this to active record, a deeper understanding was required of active record. So I started diving in and fixing bugs, going through the lighthouse ticket tracker and fixing bugs in active record. And I ran across one that said active record is five times slower than in rails 2.3.5. This was before rails 3 was released and you can go read up on the ticket here. And I thought to myself, five times slower? really? five times slower? how is that possible? and it *is* possible! It really was five times slower! So I thought that I'd look into this, and I thought, what could possibly go wrong?
+by looking at things I used to improve the performance of ARel.
 
-So, motivation. Why do we care about speed? We all know that ruby can't scale, and rails can't scale, and yet, we're all rubyists, right?
+So how did I get started with this? There's a feature I've wanted to add to Rails for a very long time,
+
+and that is prepared statement caching, and we'll actually have that feature in Rails 3 point 1.
+
+In order to add this, a deeper understanding was required of active record. So I started diving in and fixing bugs, going through the lighthouse ticket tracker and fixing bugs in active record.
+
+And I ran across one that said active record is five times slower than in rails 2.3.5.
+
+This was before rails 3 was released and you can go read up on the ticket here.
+
+And I thought to myself, five times slower? really? five times slower?
+
+how is that possible?
+
+And it *is* possible! It really was five times slower!
+
+So I thought that I'd look into this, and I thought, what could possibly go wrong?
+
+So, motivation.
+
+Why do we care about speed? We all know that ruby can't scale, and rails can't scale, and yet, we're all rubyists, right?
+
+## animated gif
 
 As a tangent, I've discovered the technique for scaling ruby. and it goes like this. it's very simple, like this. Look at that scale. It scales very beautifully. Now, the thing is, the difference between ruby and java is that when you scale java, it doesn't pixellate like this.
 
+## trollface
+
 But I'm asking you all why you want to make your code faster, and really, I'm just trolling you. Usually, the slow code is linked to poor code, so if we identify bits that are slow, we can find bad code in our system and get rid of it.
 
-When should I make my code faster? Easy answer to this. When it isn't fast enough. But then the question is "What is fast enough?" Whenever I think about this, I think, well, do people notice it? and what are you comparing it to? In my mind, fast enough means that it finishes in a reasonable amount of time and that is subjective.
+When should I make my code faster? Easy answer to this.
 
-And really, I'm telling you all these things but I don't want you to believe me. I want you to think critically and go out and look at this stuff and analyze it for yourself.
+When it isn't fast enough.
 
-For performance, we need to reduce method calls, branching and looping, and we need to reduce objects. What I think is interesting is that, for clean code, the things to reduce are exact
+But then the question is "What is fast enough?"
+
+Whenever I think about this, I think, well, do people notice it?
+
+and what are you comparing it to?
+
+In my mind, fast enough means that it finishes in a reasonable amount of time and that is subjective.
+
+And really, I'm telling you all these things but I don't want you to believe me.
+
+I want you to think critically and go out and look at this stuff and analyze it for yourself.
+
+For performance, we need to:
+
+reduce method calls, branching and looping, and we need to reduce objects. What I think is interesting is that,
+
+**~*~*~**~*~*~* WTF *~*~*~*~*~*~*
+
+for clean code, the things to reduce are exact *
 
 So the things we need to minimize for minimizing our use of time and space are exactly the things we need to minimize for clean code, so therefore, clean code equals performant code.
+
+## 100 slides later
 
 So conclusion, aka the things I've learned: System impact. It looks like this, and right there in the middle is a very depressing time. I learned: When should I rewrite? I see it like this: the earliest you should rewrite is when Ryan Davis says so, and the latest you should rewrite is when I say so you should probably pick a time in between there.
 
