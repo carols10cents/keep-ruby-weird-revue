@@ -87,11 +87,6 @@ This is the one I like. Cause you can't ever see anything about him. He's always
 
 704
 
-19:00 - double splat
-19:45 - not worth your $500
-20:00 - matz is super cool, unruffled, matz is nice
-22:30 - creator is biggest weakness? whaa?
-
 # Tenderlove
 
 O-M-G! O-M-G!
@@ -134,11 +129,11 @@ Why do we care about speed? We all know that ruby can't scale, and rails can't s
 
 As a tangent, I've discovered the technique for scaling ruby. and it goes like this. it's very simple, like this.
 
-## animated gif
+==== animated gif ====
 
 Look at that scale. It scales very beautifully. Now, the thing is, the difference between ruby and java is that when you scale java, it doesn't pixellate like this.
 
-## trollface
+trollface
 
 But I'm asking you all why you want to make your code faster, and really, I'm just trolling you. Usually, the slow code is linked to poor code, so if we identify bits that are slow, we can find bad code in our system and get rid of it.
 
@@ -158,19 +153,19 @@ And really, I'm telling you all these things but I don't want you to believe me.
 
 I want you to think critically and go out and look at this stuff and analyze it for yourself.
 
-For performance, we need to:
+For performance, we need to reduce certain things:
 
-reduce method calls, branching and looping, and we need to reduce objects. What I think is interesting is that,
+method calls, branching and looping, and we need to reduce objects. What I think is interesting is that, for clean code, the things to reduce are exactly the same, so therefore, clean code equals performant code.
 
-**~*~*~**~*~*~* WTF *~*~*~*~*~*~*
+==== 100 slides later gif ====
 
-for clean code, the things to reduce are exact *
+So conclusion, aka the things I've learned:
 
-So the things we need to minimize for minimizing our use of time and space are exactly the things we need to minimize for clean code, so therefore, clean code equals performant code.
+System impact. It looks like this, and right there in the middle is a very depressing time.
 
-## 100 slides later
+I learned: When should I rewrite?
 
-So conclusion, aka the things I've learned: System impact. It looks like this, and right there in the middle is a very depressing time. I learned: When should I rewrite? I see it like this: the earliest you should rewrite is when Ryan Davis says so, and the latest you should rewrite is when I say so. you should probably pick a time in between there.
+I see it like this: the earliest you should rewrite is when Ryan Davis says so, and the latest you should rewrite is when I say so. So you should probably pick a time in between there.
 
 1025
 
@@ -208,52 +203,35 @@ So let's talk about the underwhelming part of this-- some techniques for doing t
 
 # Jim
 
-Hi, I'm Jim Weirich, and I am here to talk about Friendly Flying Robots in Ruby! So I've noticed that this conference is a bit on the soft side, so now it's time for the geeky stuff! This code will have ruby code, it will have technical specifications, we are going to be interfacing with hardware, and we are going to have UML diagrams-- but only one! And the best part is, we are going to have flying robots.
+Hi, I'm Jim Weirich, and I am here to talk about Friendly Flying Robots in Ruby!
 
-But first, I want to talk a little bit about terminology. People often talk about these things as drones-- I actually dislike that terminology because it brings these things to mind. So I try not to use that word.
+<---cut?
+So I've noticed that this conference is a bit on the soft side, so now it's time for the geeky stuff! This code will have ruby code, it will have technical specifications, we are going to be interfacing with hardware, and we are going to have UML diagrams-- but only one! And the best part is, we are going to have flying robots.
+-->
+
+First, I want to talk a little bit about terminology. People often talk about these things as drones-- I actually dislike that terminology because it brings these things to mind. So I try not to use that word.
 
 So we are going to talk about flying robots. But! When you program a drone in ruby, they become *friendly* flying robots! When skynet comes, wouldn't you rather it be programmed in ruby?
 
-Ok, are we ready? I always say hardware demos are the scariest demos to do because so much can go wrong.
+So I've written this library called argus, and we're going to use it by creating a drone object here, tell the drone to start up the background processes, tell it to take off and hover at about 1 meter, spin right, spin left, hover, and land. Just a very, very simple program.
 
+Ok, are we ready? I always say hardware demos are the scariest demos to do because so many things can go wrong. Let's see what happens here.
 
+==== drone demo ====
 
-4:10 - how he got into this
+So that was the argus library controlling the drone!
 
-5:37 - yes i have sshed into my drone
+Ok so here's another program, I'm going to have it take off, using a loop two times and make it swing back and forth.
 
-6:30 - software
-
-9:25 - keeping up with 30ms recommendation in ruby
-
-11:12 - yaw, pitch, roll demo
-
-14:11 - argus library
-
-16:18 - hardware demos are scary
-
-19:00 - irb/full power
-
-19:50 - there's more, we can get data back
-
-23:19 - c to ruby
-
-26:00 - UML
-
-28:40 - target demo
-
-31:30 - quick command called land
-
-34 - follow me
-
-
-
-
-
+How bout that! Two successful hardware demos!
 
 # Jeremy and Carol
 
-Carol: Hey Jeremy, did you hear about this new conference, Keep Ruby Weird??
+Carol: Hey Jeremy!
+
+Jeremy: Yeah Carol?
+
+Carol: Did you hear about this new conference, Keep Ruby Weird??
 
 Jeremy: Yeah!!! It sounds like so much fun!!! We should sumbit a talk!!!
 
