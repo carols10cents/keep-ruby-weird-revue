@@ -88,6 +88,84 @@ This is the one I like. Cause you can't ever see anything about him. He's always
 
 704
 
+# Bryan Liles
+
+:30
+
+Today I'm going to talk about BDD with RSpec, but I like to change things around so let's just talk about BDD or,
+
+:43
+
+really, let's just talk about testing for us normal people. And the real thing I'm trying to get out to everyone here is that
+
+:48
+you should test all the fucking time.
+
+1:13
+So the bible says in the beginning, and in the beginning there was... what?
+
+1:16
+(no/yes) there was PERL! Perl is what I knew! And after I got good at Perl, I learned Java.
+
+1:35
+And one thing I want to say is test all the fucking time.
+
+
+1:57
+
+Then I fell into testing and I thought I was doing real good here, but there was a problem-- I was writing bad, brittle tests. So then, a couple of years ago, there was this little Danish guy, he looks like a cartoon character,
+
+2:08
+came up with something called Ruby on Rails. And I can't use the logo because he says I can't. So with Ruby on Rails we've got this whole little test directory, and I was still writing bad tests.
+
+2:30
+But then my evolution began.
+
+3:00
+And then around January of last year, some smart guys came up with RSpec and I discovered it and was like wow, this is hot.
+
+3:21
+But I was still writing brittle tests with a funky syntax. And it wasn't helping anyone.
+
+3:27
+~~~~ silence ~~~~
+
+3:48
+So then I decided I wasn't ready to give up on rspec and I studied and studied and studied.
+
+and really one rule you should get out of this talk is test all the fucking time.
+
+4:28
+So coding this way is going to be uncomfortable, and there aren't instant benefits. But I don't care if you have a deadline, I don't care if it hurts, write your tests first.
+
+6:04
+TDD is a muscle, you have to exercise it.
+
+6:24
+Let me talk about your feelings while you're going to be testing.
+
+6:28
+First I felt sad, and like this sucks!
+
+6:33
+Then I was impatient and was like this sucks and it takes forever!
+
+6:35
+And then i had grief because I wasn't getting any success with my tests
+
+6:40
+And then I felt cromulent, I don't know what that means
+
+6:44
+And then I had disbelief
+
+6:52
+But then, and this was the important part, I accepted it. I accepted that it would take a little longer and it would be better and you gotta remember,
+
+
+test all the fucking time.
+
+
 # Tenderlove
 
 O-M-G! O-M-G!
